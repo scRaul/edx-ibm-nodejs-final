@@ -1,0 +1,37 @@
+@api=http://localhost:5000
+
+### TASK 1 1-getallbooks.png
+GET {{api}}
+### TASK 2 2-getdetailsISBN.png
+GET {{api}}/isbn/1
+### TASK 3 3-getbooksbyauthor.png
+GET {{api}}/author/Dante Alighieri
+### TASK 4  4-getbooksbytitle.png
+GET {{api}}/title/Things fall
+### TASK 5 5-getbookreview.png
+GET {{api}}/review/5
+
+### TASK 6 6-register.png
+POST {{api}}/register
+Content-Type: application/json
+
+{    
+    "username":"bobby123",
+    "password":"pass123"
+} 
+
+### TASK 7 7-login.png
+POST {{api}}/customer/login
+Content-Type: application/json
+
+{    
+    "username":"bobby123",
+    "password":"pass123"
+} 
+
+### TASK 8 8-reviewadded.png
+PUT {{api}}/customer/auth/review/5?review=really good read
+
+
+### TASK 9 9-deltereview.png
+DELETE  {{api}}/customer/auth/review/5
